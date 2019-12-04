@@ -9,7 +9,7 @@ import (
 	"encoding/gob"
 )
 
-// GobEncode GobEncode
+// GobEncode encode obj by gob
 func GobEncode(e interface{}) ([]byte, error) {
 	b := new(bytes.Buffer)
 	enc := gob.NewEncoder(b)
@@ -19,14 +19,14 @@ func GobEncode(e interface{}) ([]byte, error) {
 	return b.Bytes(), nil
 }
 
-// GobDecode GobDecode
+// GobDecode decode byte slice to obj by gob
 func GobDecode(bs []byte, e interface{}) error {
 	b := bytes.NewBuffer(bs)
 	dec := gob.NewDecoder(b)
 	return dec.Decode(e)
 }
 
-// GobDecodeString GobDecodeString
+// GobDecodeString decode string to obj by gob
 func GobDecodeString(bs string, e interface{}) error {
 	b := bytes.NewBufferString(bs)
 	dec := gob.NewDecoder(b)
