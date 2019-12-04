@@ -1,10 +1,12 @@
-.PHONY: fmt test clean
+.PHONY: fmt test ci clean
 
 fmt:
 	go fmt ./...
 
-test: fmt
+ci:
 	go test ./...
+
+test: fmt ci
 
 clean:
 	go clean -r ./...
