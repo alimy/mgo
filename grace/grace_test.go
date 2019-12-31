@@ -1,3 +1,7 @@
+// Copyright 2020 Michael Li <alimy@gility.net>. All rights reserved.
+// Use of this source code is governed by Apache License 2.0 that
+// can be found in the LICENSE file.
+
 package grace
 
 import (
@@ -8,7 +12,7 @@ import (
 	"testing"
 )
 
-func TestExit(t *testing.T) {
+func TestGrace(t *testing.T) {
 	var b bytes.Buffer
 	var exitCode int
 	var sig1, sig2 bool
