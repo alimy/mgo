@@ -5,7 +5,7 @@
 package main
 
 import (
-	"github.com/alimy/mgo/tools/internal/cmd"
+	"github.com/alimy/mgo/mgo/internal/cmd"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	cmd.Setup(
 		"mgo",              // command name
 		"mgo help toolkit", // command short describe
-		"mgo help tookit",  // command long describe
+		"mgo help toolkit",  // command long describe
 	)
 
 	// execute start application

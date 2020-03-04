@@ -3,7 +3,7 @@ mgo's help toolkit
 
 ### Usage
 ```bash
-% go get github.com/alimy/mgo/tools/mgo@latest
+% go get github.com/alimy/mgo/mgo@latest
 % mkdir -p $GOPATH/src/github.com/alimy
 % cd $GOPATH/src/github.com/alimy
 % mgo new -d examples -p github.com/alimy/examples

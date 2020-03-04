@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/alimy/mgo/tools/internal/generator"
+	"github.com/alimy/mgo/mgo/internal/generator"
 	"github.com/spf13/cobra"
 )
 

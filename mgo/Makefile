@@ -6,7 +6,7 @@ LDFLAGS += -X "github.com/alimy/mgo/tools/version.GitHash=$(shell git rev-parse 
 
 .PHONY: build
 build: fmt
-	go build  -ldflags '$(LDFLAGS)' -o mgo/mgo mgo/main.go
+	go build  -ldflags '$(LDFLAGS)' -o mgo main.go
 
 .PHONY: generate
 generate:
