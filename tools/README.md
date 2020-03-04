@@ -3,12 +3,12 @@ mgo's help toolkit
 
 ### Usage
 ```bash
-% git clone https://github.com/alimy/mgo.git $GOPATH/src/github.com/alimy/mgo
-% cd $GOPATH/src/github.com/alimy/mgo/toolkit
-% make build
-% ./mgo new -d example -p github.com/alimy/mgo/toolkit/example
-% tree -L 2 example
-example
+% go get github.com/alimy/mgo/tools@latest
+% mkdir -p $GOPATH/src/github.com/alimy
+% cd $GOPATH/src/github.com/alimy
+% mgo new -d examples -p github.com/alimy/examples
+% tree -L 2 examples
+examples
 ├── Makefile
 ├── README.md
 ├── assets
@@ -49,7 +49,7 @@ example
 └── version
     └── version.go
 
-% cd example
+% cd examples
 % make build
 % ls
 Makefile  assets    core      go.mod    hack      servants  zimctl
@@ -58,5 +58,5 @@ README.md cmd       docs      go.sum    internal  version   zimlet
 
 ### Release
 ```bash
-%  hub release create -m "toolkit/{tag eg:v0.1.0} release" toolkit/{tag eg:v0.1.0}
+%  hub release create -m "tools/{tag eg:v0.1.0} release" tools/{tag eg:v0.1.0}
 ```

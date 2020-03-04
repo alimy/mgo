@@ -7,7 +7,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/alimy/mgo/toolkit/version"
+	"github.com/alimy/mgo/tools/version"
 	"github.com/spf13/cobra"
 )
 

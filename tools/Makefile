@@ -1,8 +1,8 @@
 GOFMT ?= gofmt -s -w
 GOFILES := $(shell find . -name "*.go" -type f)
 
-LDFLAGS += -X "github.com/alimy/mgo/toolkit/version.BuildTime=$(shell date -u '+%Y-%m-%d %I:%M:%S %Z')"
-LDFLAGS += -X "github.com/alimy/mgo/toolkit/version.GitHash=$(shell git rev-parse HEAD)"
+LDFLAGS += -X "github.com/alimy/mgo/tools/version.BuildTime=$(shell date -u '+%Y-%m-%d %I:%M:%S %Z')"
+LDFLAGS += -X "github.com/alimy/mgo/tools/version.GitHash=$(shell git rev-parse HEAD)"
 
 .PHONY: build
 build: fmt

@@ -1,4 +1,4 @@
-module github.com/alimy/mgo/toolkit
+module github.com/alimy/mgo/tools
 
 go 1.12
 
