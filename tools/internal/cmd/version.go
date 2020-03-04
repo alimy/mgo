@@ -22,6 +22,6 @@ func init() {
 }
 
 func versionRun(_cmd *cobra.Command, _args []string) {
-	fmt.Printf("v%s\nBuildTime:%s\nBuildGitSHA:%s\n",
+	fmt.Printf("v%s\nBuildTime: %s\nBuildGitSHA: %s\n",
 		version.AppVer, version.BuildTime, version.GitHash)
 }

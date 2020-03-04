@@ -95,7 +95,7 @@
 // templates/grpc/servants/share/share.tmpl (357B)
 // templates/grpc/version/version.tmpl (608B)
 
-package cmd
+package generator
 
 import (
 	"bytes"

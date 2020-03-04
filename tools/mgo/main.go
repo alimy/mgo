@@ -5,7 +5,7 @@
 package main
 
 import (
-	"github.com/alimy/mgo/tools/cmd"
+	"github.com/alimy/mgo/tools/internal/cmd"
 )
 
 func main() {
