@@ -7,7 +7,7 @@ mgo's help toolkit
 % cd $GOPATH/src/github.com/alimy/mgo/toolkit
 % make build
 % ./mgo new -d example -p github.com/alimy/mgo/toolkit/example
-% tree example
+% tree -L 2 example
 example
 ├── Makefile
 ├── README.md
