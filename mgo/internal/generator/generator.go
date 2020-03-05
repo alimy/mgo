@@ -54,6 +54,11 @@ func Generate(dstPath string, style string, pkgName string) error {
 				break
 			}
 		}
+
+		if err = file.Close(); err != nil {
+			break
+		}
 	}
+
 	return err
 }
