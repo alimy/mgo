@@ -1,7 +1,7 @@
 package generator
 
 import (
-	"errors"
+	"fmt"
 	"os"
 	"path/filepath"
 	"text/template"
@@ -17,7 +17,7 @@ func Generate(dstPath string, style string, pkgName string) error {
 
 	tmpls, exist := tmplFiles[style]
 	if !exist {
-		return errors.New("not exist style template project")
+		return fmt.Errorf("not exist style(%s) template project", style)
 	}
 
 	ctx := &tmplCtx{

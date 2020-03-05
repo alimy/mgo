@@ -20,6 +20,16 @@ type tmplInfo struct {
 
 // tmplFiles map of generated file's assets info
 var tmplFiles = map[string]map[string]tmplInfo{
+	"gin": {
+		"Makefile":               {"mir/makefile.tmpl", false, false},
+		"README.md":              {"mir/readme.tmpl", false, false},
+		"go.mod":                 {"mir/gin_go_mod.tmpl", true, false},
+		"main.go":                {"mir/gin_main.tmpl", false, false},
+		"mirc/main.go":           {"mir/gin_mirc_main.tmpl", true, false},
+		"mirc/routes/site.go":    {"mir/gin_mirc_routes_site.tmpl", false, false},
+		"mirc/routes/v1/site.go": {"mir/gin_mirc_routes_site_v1.tmpl", false, false},
+		"mirc/routes/v2/site.go": {"mir/gin_mirc_routes_site_v2.tmpl", false, false},
+	},
 	"grpc": {
 		"cmd/zimctl/.gitignore":                                          {"grpc/cmd/zimctl/.gitignore.tmpl", false, false},
 		"cmd/zimctl/root.go":                                             {"grpc/cmd/zimctl/root.tmpl", true, false},
